@@ -1,0 +1,199 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px 150px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 85px;
+}
+
+.nav-link-text{
+    display: block;
+}
+
+.nav-link{
+    cursor: pointer;
+    font-family: "Inter",sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    transition: color .5s ease-in-out;
+}
+
+.nav-link:hover{
+    color: #f26065;
+}
+
+.main{
+    margin-top: 100px;
+}
+
+.name{
+    font-family: "Inter",sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 200;
+}
+
+.big{
+    font-family: "Alfa Slab One",serif;
+    font-size: 104px;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+button{
+    background-color: transparent;
+    border: 1px solid #f26065;
+    height: 40px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f26065;
+    font-family: "Inter",sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: all .5s ease-in-out;
+    box-shadow: 20px 20px 60px #ffe0e1, -20px -20px 60px #fff;
+}
+
+button:hover{
+    color: #fff;
+    background-color: #f26065;
+}
+
+.gallery{
+    margin-top: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gallery img{
+    width: 454px;
+    object-fit: cover;
+    box-shadow: 20px 20px 60px #ffe0e1, -20px -20px 60px #fff;
+    transition: scale .5s ease-in-out;
+    border-radius: 10px;
+}
+
+.gallery img:hover{
+    scale: 1.05;
+}
+
+.img2,.img1{
+    height: 682px;
+}
+
+.img3{
+    height: 783px;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.social p{
+    font-family: "Inter",sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 25px 0px;
+}
+
+.icon{
+    cursor: pointer;
+    transition: all .5s  ease-in-out;
+}
+
+.icon:hover{
+    scale: 1.1;
+}
+
+/* mobile view */
+@media (max-width: 500px){
+    body{
+        margin: 0px 25px;
+    }
+    .logo{
+        height: 25px;
+    }
+    .nav-link-text{
+        display: none;
+    }
+    .main{
+        margin-top: 50px;
+    }
+    .name{
+        font-size: 12px;
+        letter-spacing: 7px;
+    }
+    .big{
+        font-size: 35px;
+    }
+    button{
+        height: 25px;
+        width: 150px;
+        font-size: 11px;
+        margin-top: 15px;
+    }
+    .gallery{
+        gap: 50px;
+        margin-top: 45px;
+        flex-wrap: wrap;
+    }
+    .gallery img{
+        width: 100%;
+        box-shadow: 10px 10px 30px #ffe0e1,-10px -10px 30px #fff;
+    }
+    .img3{
+        order: 1;
+    }
+    .img2,.img1{
+        order: 2;
+    }
+    .social p{
+        font-size: 12px;
+    }
+    .icons{
+        gap: 20px;
+        margin: 10px 0px 25px 0px;
+    }
+    .icon{
+        height: 20px;
+    }
+}
